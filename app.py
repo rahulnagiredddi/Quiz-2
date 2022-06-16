@@ -6,11 +6,11 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-server = 'dheeraj1045.database.windows.net'
-database = 'dheerajdb'
-username = 'dheeraj'
-password = 'Dheer@jkumar1045'
-driver = '{ODBC Driver 17 for SQL Server}'
+driver = '{ODBC Driver 18 for SQL Server}'
+server = 'assignment-2.database.windows.net'
+database = 'adb_summer_assignments'
+username = 'adb-sql-database'
+password = 'Admin@_2022'
 
 cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server +
                       ';PORT=1443;DATABASE='+database+';UID='+username+';PWD=' + password)
@@ -66,5 +66,5 @@ def Filter1():
     return render_template('filter.html', num=result, num1=result1)
 
 
-if(__name__) == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True, port=8080)
