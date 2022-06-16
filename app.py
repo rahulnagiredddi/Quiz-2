@@ -1,14 +1,8 @@
 from decimal import Decimal
-from math import degrees
-import re
-from tkinter import Place
-from turtle import distance
-from unittest import result
 import pyodbc
 import datetime as dt
 from datetime import datetime
 from flask import Flask, render_template, request
-import math
 
 app = Flask(__name__)
 
@@ -69,7 +63,7 @@ def Filter1():
         cursor.execute(
             "SELECT TOP "+str(degrees) + " * FROM [dbo].[earthquake] where longitude > "+str(l1)+" AND longitude <"+str(l2)+"ORDER BY mag ASC")
         result1 = cursor.fetchall()
-    return render_template('filter1.html', num=result, num1=result1)
+    return render_template('filter.html', num=result, num1=result1)
 
 
 if(__name__) == "__main__":
