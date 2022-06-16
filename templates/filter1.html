@@ -1,0 +1,38 @@
+ <h3>eartquakes with maximum magnitude in that area</h3>
+ <table>
+     <tr>
+         <th>time</th>
+         <th>latitide</th>
+         <th>longitude</th>
+         <th>id</th>
+         <th>place</th>
+     </tr>
+     {% for rec in num %}
+     <tr>
+         <th>{{ rec['time'] }}</th>
+         <th>{{ rec['latitude'] }}</th>
+         <th>{{ rec['longitude'] }}</th>
+         <th>{{ rec['id'] }}</th>
+         <th>{{ rec['place'] }}</th>
+     </tr>
+     {% endfor %}
+ </table>
+ <h3>eartquakes with minimum magnitude in that area</h3>
+ <table>
+     <tr>
+         <th>time</th>
+         <th>latitide</th>
+         <th>longitude</th>
+         <th>id</th>
+         <th>place</th>
+     </tr>
+     {% for rec in num1 %}
+     <tr>
+         <th>{{ rec['time'] }}</th>
+         <th>{{ rec['latitude'] }}</th>
+         <th>{{ rec['longitude'] }}</th>
+         <th>{{ rec['id'] }}</th>
+         <th>{{ rec['place'] }}</th>
+     </tr>
+     {% endfor %}
+ </table>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>Dheeraj Kumar Tatipamula -03485</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        fieldset {
+            background-color: #eeeeee;
+        }
+
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+
+    <div>
+        <form method="post" action="/Filter" enctype="multipart/form-data">
+            <lable>
+                Enter longitude value
+            </lable>
+            <input type="number" name="longitude" />
+            <lable>
+                Enter lNumber of degrees
+            </lable>
+            <input type="number" name="degrees" />
+
+            <input type="submit" value="Search" name="search">
+            <!-- <button class="input-button">Enter</button> -->
+
+        </form>
+        <form method="post" action="/Filter1" enctype="multipart/form-data">
+            <lable>
+                Enter minimum longitude value
+            </lable>
+            <input type="number" name="minlongitude" />
+            <lable>
+                Enter maximum longitude value
+            </lable>
+            <input type="number" name="maxlongitude" />
+            <lable>
+                Enter lNumber of degrees
+            </lable>
+            <input type="number" name="number" />
+
+            <input type="submit" value="Search" name="search">
+            <!-- <button class="input-button">Enter</button> -->
+
+        </form>
+    </div>
+
+</body>
+
+</html>

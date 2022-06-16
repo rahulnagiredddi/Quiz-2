@@ -1,0 +1,18 @@
+ <table>
+     <tr>
+         <th>time</th>
+         <th>latitide</th>
+         <th>longitude</th>
+         <th>id</th>
+         <th>place</th>
+     </tr>
+     {% for rec in num %}
+     <tr>
+         <th>{{ rec['time'] }}</th>
+         <th>{{ rec['latitude'] }}</th>
+         <th>{{ rec['longitude'] }}</th>
+         <th>{{ rec['id'] }}</th>
+         <th>{{ rec['place'] }}</th>
+     </tr>
+     {% endfor %}
+ </table>
